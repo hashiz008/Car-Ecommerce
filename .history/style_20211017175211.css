@@ -1,0 +1,17 @@
+.carCards {
+    width: 370px;
+    height: 250px;
+}
+.carCards2 {
+    width: 240px;
+    height: 350px;
+}
+
+.img {
+    width: 60%;
+}
+
+.category {
+    margin-top: 45px;
+    margin-left: -65px;
+}

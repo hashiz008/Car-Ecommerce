@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <title>Car commerce</title>
+</head>
+<body>
+  <div id="app">
+      <div>
+          <select v-model="selectCate" id="cateSel">
+              <option>以下を選択</option>
+              <option v-for="(item,index) in items" :value="item">{{item}}</option>
+          </select>
+      </div>
+      <div v-for="item in items">
+            <item-card :data="item"></item-card>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>
+      <select v-model="selectCate" id="cateSel">
+          <option>以下を選択</option>
+          <option v-for="(item,index) in items" :value="item">{{item}}</option>
+      </select>
+    </div>
+
+    <div v-for="itemList in aa">
+        <item-card  :item-list="itemList"/>
+    </div> -->
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

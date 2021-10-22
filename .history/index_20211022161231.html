@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Car commerce</title>
+</head>
+<body>
+    <div id="app">
+      <!-- 選択カテゴリー -->
+        <div class="flex mt-5 h-8">
+            <select v-model="selectCate" class="ml-5 border bg-gray-300 border-gray-200">
+                <option>以下を選択</option>
+                <option  v-for="carCate in carCates" :value="carCate">{{carCate}}</option>
+            </select>
+
+            <select v-model="selectSort" class="ml-5 border bg-gray-300 border-gray-200">
+                <option>Sort by:</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest Arrivals</option>
+            </select>
+        </div>
+
+        <!-- 自動車一覧 -->
+        <div v-for="car in carSort">
+            <car-card :cars="car"></car-card>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

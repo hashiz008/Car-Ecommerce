@@ -1,0 +1,13 @@
+.carCards {
+    width: 350px;
+    height: 250px;
+}
+.carCards2 {
+    width: 250px;
+    height: 350px;
+}
+
+.category {
+    margin-top: 30px;
+    margin-left: -50px;
+}
